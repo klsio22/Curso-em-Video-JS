@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Analisador de Números</title>
+
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body id="cor">
+
+        <header><h1>Analisador de Números</h1></header>
+
+        <main>
+
+            <div id="msg">
+                <p>
+                    Número(entre 1 e 100):
+                    <input type="number" id="numero" name="numero">
+                    <button type="submit" autofocus onclick="adicionar()">
+                        Adicionar
+                    </button>
+                </p>
+            </div>
+
+            <div >
+                <label>
+                    <select multiple="" id="lista">
+
+                    </select>
+
+                </label>
+
+                <button onclick="finalizar()">
+                    Finalizar
+                </button>
+
+                <div id="texto"></div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; CursoemVideo</p>
+        </footer>
+
+        <script src="js/scriptEx07.js"></script>
+    </body>
+</html>
