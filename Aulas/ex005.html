@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(67, 146, 219);
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        var nome = window.prompt('Qual é seu nome')
+
+        document.write(`Olá ${nome}, Seu nome tem ${nome.length} letras.</br>`)//Escrever no corpo da página
+
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}</br>`)
+
+        document.write(`Seu nome em letras maiúsculas é ${nome.toLocaleLowerCase()}`)
+
+        /*
+
+doutor-estranho@doutorestranho-VGNFW590F:/media/doutor-estranh
+videodoutor-estranho@doutorestranho-VGNFW590F:/media/doutor-e75A70/Documentos/Cursos/Curso JS curso em video$ node
+Welcome to Node.js v13.0.0-nightly20190618779a243f86.
+Type ".help" for more information.
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+> n1.toFixed(3)
+'1545.500'
+> n1.tofixed(2).replace('.',',')
+Thrown:
+TypeError: n1.tofixed is not a function
+> n1.toFixed(2).replace('.',',')
+'1545,50'
+> n1.toLocaleString('pt-BR',{style :'currency',currency: })
+> n1
+> var n1 = 1545,5
+Thrown:
+var n1 = 1545,5
+              ^
+
+SyntaxError: Unexpected number
+> n1.toLocaleString('pt-BR',{style :'currency',currency:'BRL' })
+'R$ 1,545.50'
+> n1.toLocaleString('pt-BR',{style :'currency',currency:'BRL' })
+'R$ 1,545.50'> n1.toLocaleString('RUS',{style :'currency',currency:'RUB' }
+)
+'RUB 1,545.50'
+> n1.toLocaleString('RUS',{style :'currency',currency:'RUB' }
+)
+'RUB 1,545.50'
+> n1.toLocaleString('pt-BR',{style :'currency',currency:'RUB'
+ })
+'RUB 1,545.50
+
+        */
+
+
+
+    </script>
+
+</body>
+
+</html>

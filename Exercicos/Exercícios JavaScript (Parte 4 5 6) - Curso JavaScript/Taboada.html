@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabuada</title>
+
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body id="cor" onload="carregar()">
+
+        <header><h1>Tabuada</h1></header>
+
+        <main>
+
+            <div id="msg">
+                <p>
+                    Número:
+                    <input type="number" id="numero" name="numero">
+                    <button type="submit" autofocus onclick="gerador()">
+                        Contar
+                    </button>
+                </p>
+            </div>
+
+            <div>
+                <label>
+                    <select multiple="" id="tabuada">
+                        <option>Digite um numero acima</option>
+                    </select>
+                </label>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; CursoemVideo</p>
+        </footer>
+
+        <script src="js/code02.js"></script>
+    </body>
+</html>

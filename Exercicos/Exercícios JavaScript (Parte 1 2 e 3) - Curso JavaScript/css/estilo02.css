@@ -1,0 +1,33 @@
+body {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    background: #3b7ecf;
+    color: azure;
+}
+
+
+div#info{
+    padding: 10px 0 5px 0;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    padding-top: 10px;
+}
+
+button{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#center {
+    background: rgb(145, 173, 177);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    width: 500px;
+    text-align: left;
+    margin: 15px 0 15px 150px;
+}

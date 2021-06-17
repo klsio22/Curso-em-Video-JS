@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex007</title>
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            background: rgb(111, 111, 255);
+            color: white;
+            font: normal 18 arial;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai ser o resuldado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong>em JavaScript</p>
+
+    <div id="msg">
+        Click em mim
+    </div>
+
+    <script>
+
+        // window.document.write(window.document.URL)
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+
+        // var corpo = window.document.body
+
+        // var d = window.document.getElementById('msg')
+
+        var d = window.document.querySelector('div#msg')
+        
+      
+        window.document.write('Está escrito assim: ' + p1.innerText)
+
+        d.style.background = 'blue'
+
+        //corpo.style.background = 'rgb(75, 75, 190)'
+        //p1.style.color = 'blue'
+
+
+        //d.style.background = 'green'
+        //d.innerText = 'Estou Aguadando...'
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

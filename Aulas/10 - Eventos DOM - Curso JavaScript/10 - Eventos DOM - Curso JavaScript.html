@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>EvenDocumentDocumenttos DOM</title>
+
+        <style>
+            body{
+                background: rgb(41, 41, 41);
+                color: antiquewhite;
+            }
+
+            #quadrado {
+                font: normal 20pt Arial;
+                background: rgb(8, 116, 8);
+                color: white;
+                width: 600px;
+                height: 600px;
+                line-height: 550px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- <div id="quadrado" onclick="clicar()" onmouseout="sair()"
+            onmouseenter="entrar()">
+            Interaja , Por gentileza!
+        </div> -->
+        <div id="quadrado">
+            Interaja , Por gentileza!
+        </div>
+
+        <script>
+        var a = window.document.getElementById('quadrado')
+
+        a.addEventListener("click",clicar)
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout",sair)
+
+
+        function clicar() {
+
+            a.innerText = 'Isso ai, Clicou e se fudeu com vírus'
+            a.style.background = "red"
+        }
+
+        function entrar() {
+
+            a.innerText = "Entrou um vírus no seu PC!"
+        }
+
+        function sair() {
+
+            a.innerText = 'Saiu para o além da terra do nunca!'
+            a.style.background = "green"
+        }
+
+    </script>
+    </body>
+
+</html>

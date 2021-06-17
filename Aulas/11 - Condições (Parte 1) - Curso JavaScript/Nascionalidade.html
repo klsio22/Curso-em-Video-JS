@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Nascionalidade</title>
+
+        <style>
+
+            body{
+                font: normal 18pt arial;
+                background-color: rgb(40, 41, 40); 
+                color: aliceblue;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+
+        <h1>Nascionalidade</h1>
+
+        Qual sua nascionalidade:<!--  <input type="text" name="origem" id="origem"> -->
+        <select id="origem">
+            <option value="">-- Selecione o País --</option>
+            <option value="Argentina" id="1">
+                África do Sul
+            </option>
+            <option value="Argentina" id="2">
+                Argentina
+            </option>
+            <option value="Austrália" id="3">
+                Austrália
+            </option>
+            <option value="Bélgica" id="4">Bélgica</option>
+            <option value="Bolívia" id="5">Bolívia</option>
+            <option value="Brasil" id="6">Brasil</option>
+            <option value="Equador" id="7">Equador</option>
+
+            <option value="8 Unidos" id="8">
+                Estados Unidos
+            </option>
+            <option value="França" id="9">França</option>
+        </select>
+
+
+        <input type="button" value="Verificar" onclick="pais()">
+
+        <div id="res">
+
+        </div>
+
+
+        <script>
+
+            function pais(){
+                var pais, origem, res , opcao
+                opcao = document.getElementById('1') 
+             
+                pais = String(opcao.value).toUpperCase()
+                console.log(pais)
+                res = document.getElementById('res')
+
+                if(pais == 'BRASIL' || pais == 'BRAZIL'){
+                    res.innerHTML +=`<p>Você é <strong>Brasileiro</strong></p>`
+                }else{
+                    res.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
+                }
+                
+            }
+
+        </script>
+    </body>
+
+</html>
